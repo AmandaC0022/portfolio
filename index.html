@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head> 
+		<title> Amanda's Portfolio </title> 
+		<meta charset=“UTF-8”> 
+		<meta name=“description” content=“When you search for your website this is the description that shows up”> 
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+	</head> 
+	<body>
+        <header>
+            <nav>
+                <!--This is the nav bar at the top-->
+                <a href="#bio"><h4 class="navbutton">Bio</h4></a>
+                <a href="#contact"><h4 class="navbutton">Contact</h4></a>
+                <a href="#links"><h4 class="navbutton">Links</h4></a>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <figure>
+                    <img id="profile-pic" class="block" src="images/profile.pic.jpg" alt="My profile picture">
+                    <figcaption>Let me design your next website</figcaption>
+                </figure>
+                <h1 id="name" class="centertext">Amanda Morgan</h1>
+                <p class="centertext" ><i>"We don't make mistakes, just happy accidents." ~ Bob Ross</i></p>
+            </section>
+            <section>
+                <h2 class="heading">Little Bit About Me:</h2>
+                <!-- This is my Short Bio and maybe a list of favorite things? -->
+                <div class="textbox">
+                    <p>Hi! My name is Amanda Morgan and I am currently an Elementary School Art Teacher in Columbiana, Alabama. I am working on becoming a Website Developer.</p>
+                </div>
+                <div class="textbox">
+                    <p>Fun Fact about me is I love to Crochet. My Granny taught me when I was 8 years old and I have been crocheting ever since. I own an Etsy Shop called, <a href= "https://www.etsy.com/shop/TheRetroStitch" title="Visit my Etsy shop, The Retro Stitch"> The Retro Stitch </a>, where I sell handmade stuffed animals. I hand draw each animal and then write a pattern. I teach Crocheting classes at our local Arts Council.</p>
+                    <div class="flexbox">
+                        <div>
+                            <img class="TRSimage" src="images/TRSsquarelogo.jpg" alt="The Retro Stitch Logo"/> 
+                        </div>
+                        <div>
+                            <img class="TRSimage" src="images/TRSanimals.jpg" alt="The Retro Stitch Stuffed Animals"/> 
+                        </div>
+                    </div>
+                </div>
+                <div class="textbox">
+                    <p>I am also a huge Auburn fan. My family has been attending Auburn college since it was an all male's college in the late 1800's. I also played Clarinet in the Auburn Marching Band. I performed at the 2010 National Championship when we won against the Oregon Ducks. I own the Women's Version of the Championship ring.</p>
+                </div>
+            </section>
+            <section> <!-- Contact Me Section -->
+                <h2 class="heading" id="contact">Contact Me</h2>
+                <form class="textbox">
+                    <!-- input form below -->
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                    <label for="email">Email:</label><br>
+                    <input type="text" id="email" name="email"><br>
+                    <textarea> Type Your Message Here: </textarea> <br>
+                    <input id="submit" type="submit" value="Submit">
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <!-- Colored bar at the bottom that has my info, email, github, phone, portfolio-->
+            <h2 class="heading" id="links">Links</h2>
+            <p>@2021</p>
+            <p>Phone:(205)902-3708</p>
+            <p>Email:AmandaC0022@gmail.com</p>
+            <figure class="inline">
+                <a href="https://www.facebook.com/amanda.coker.5855/"><img class="logolinks" src="images/logo-facebook-512.png" title="Go to Amanda's Facebook Profile" target="_blank" alt="link to facebook profile"></a>
+            </figure>
+            <figure class="inline">
+                <a href="https://github.com/AmandaC0022"><img class="logolinks" src="images/2048px-Octicons-mark-github.svg.png" title="Go to Amanda's GitHub Profile" target="_blank" alt="link to github account"></a>
+            </figure>
+        </footer>
+
+	</body>
+</html> 
