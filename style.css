@@ -1,0 +1,38 @@
+:root {
+    --blush:#f3d0c4; 
+    --light: #f0e9e8; 
+    --dark1: #8d8d9b;
+    --dark2: #707083;
+}
+
+body {
+    background: url(images/pinklight-background.jpg)no-repeat center fixed;
+    background-size: cover;
+    font-size: 16px;
+}
+
+nav {
+    background-color: var(--blush); 
+    position:fixed; 
+    top:2%; 
+    width:100%;
+}
+
+h4.navbutton {
+    background-color: var(--dark1); 
+    border:2px solid black; 
+    color: var(--blush); 
+    text-decoration:none; 
+    border-radius: 50%; 
+    box-shadow:1px 1px 3px black;  
+    padding:2%;   
+    display: inline-block; 
+    transition: all 1s ease-in-out; 
+    margin:0 20px;  
+}
+.navbutton:hover{
+    cursor:pointer;
+    transform: scale(1.5);
+    background-color: var(--dark2); 
+    color: var(--light);  
+}

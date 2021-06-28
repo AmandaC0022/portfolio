@@ -4,7 +4,7 @@
 		<title> Amanda's Portfolio </title> 
 		<meta charset=“UTF-8”> 
 		<meta name=“description” content=“When you search for your website this is the description that shows up”> 
-        <link rel="stylesheet" type="text/css" href="styles.css"> 
+        <link rel="stylesheet" type="text/css" href="style.css"> 
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 
@@ -12,50 +12,59 @@
 	<body>
         <header>
             <nav>
-                <!--This is the nav bar at the top-->
-                <a href="#bio"><h4 class="navbutton">Bio</h4></a>
-                <a href="#contact"><h4 class="navbutton">Contact</h4></a>
-                <a href="#links"><h4 class="navbutton">Links</h4></a>
+                <!--This is the nav bar at the top I want this to be fixed at the top of the page. -->
+                <a href="#bio"><h4 class="navbutton" class="grow">Bio</h4></a>
+                <a href="#projects"><h4 class="navbutton" class="grow">Projects</h4></a>
+                <a href="#contact"><h4 class="navbutton" class="grow">Contact</h4></a>
+                <a href="#links"><h4 class="navbutton" class="grow">Links</h4></a>
             </nav>
         </header>
 
         <main>
-            <section>
+            <section> 
+                <!-- This contains my profile pic with the Bob Ross quote. I want when you hover over my profile pic that it greys out and shows the Bob Ross quote. -->
                 <figure>
-                    <img id="profile-pic" class="block" src="images/profile.pic.jpg" alt="My profile picture">
-                    <figcaption>Let me design your next website</figcaption>
+                    <img id="profile-pic" src="images/profile.pic.jpg" alt="My profile picture">
                 </figure>
-                <h1 id="name" class="centertext">Amanda Morgan</h1>
-                <p class="centertext" ><i>"We don't make mistakes, just happy accidents." ~ Bob Ross</i></p>
+                <h1>Amanda Morgan</h1>
+                <p><i>"We don't make mistakes, just happy accidents." ~ Bob Ross</i></p>
             </section>
             <section>
-                <h2 class="heading">Little Bit About Me:</h2>
-                <!-- This is my Short Bio and maybe a list of favorite things? -->
-                <div class="textbox">
-                    <p>Hi! My name is Amanda Morgan and I am currently an Elementary School Art Teacher in Columbiana, Alabama. I am working on becoming a Website Developer.</p>
+                <h2 id="bio">Bio:</h2>
+                <!-- This is my Short Bio. I want this to be hidden with a vertical scroll bar. I want each paragraph to be indented. -->
+                <div>
+                    <p>Hi! My name is Amanda Morgan and I am currently in the process of switching careers from being an Elementary School Art Teacher to a Full Stack Website Developer.</p>
+                    <p>One of my favorite past times is to crochet. My Granny taught me when I was 8 years old and I have been crocheting ever since. I have turned my hobby into a side hustle by opening up my own Etsy Shop, called <a href= "https://www.etsy.com/shop/TheRetroStitch" title="Visit my Etsy shop, The Retro Stitch"> The Retro Stitch </a>, where I sell handmade stuffed animals.</p>
+                    <strong><p>My Best Qualities are:</p></strong>
+                    <ul>
+                        <li>Hard Working and Devoted to my Job</li>
+                        <li>Excellent at Time Management</li>
+                        <li>having a Team Player Mindset</li>
+                        <li>Extremely Detailed Oriented and Origanized</li>
+                    </ul>
                 </div>
-                <div class="textbox">
-                    <p>Fun Fact about me is I love to Crochet. My Granny taught me when I was 8 years old and I have been crocheting ever since. I own an Etsy Shop called, <a href= "https://www.etsy.com/shop/TheRetroStitch" title="Visit my Etsy shop, The Retro Stitch"> The Retro Stitch </a>, where I sell handmade stuffed animals. I hand draw each animal and then write a pattern. I teach Crocheting classes at our local Arts Council.</p>
-                    <div class="flexbox">
-                        <div>
-                            <img class="TRSimage" src="images/TRSsquarelogo.jpg" alt="The Retro Stitch Logo"/> 
-                        </div>
-                        <div>
-                            <img class="TRSimage" src="images/TRSanimals.jpg" alt="The Retro Stitch Stuffed Animals"/> 
-                        </div>
-                    </div>
-                </div>
-                <div class="textbox">
-                    <p>I am also a huge Auburn fan. My family has been attending Auburn college since it was an all male's college in the late 1800's. I also played Clarinet in the Auburn Marching Band. I performed at the 2010 National Championship when we won against the Oregon Ducks. I own the Women's Version of the Championship ring.</p>
+            </section>
+            <section>
+                <!-- This will contain the links to the projects. The pictures need to be greyed out but when the user hovers over the pic, it becomes full color and grows larger. When the user clicks on the img it will take the user to that project's deployed page.-->
+                <h2 id="projects">Projects:</h2>
+                <div class="flex"> <!-- Make this div a flexbox. -->
+                    <h4>Code Refactor</h4>
+                        <a href="https://amandac0022.github.io/Code-Refactor-/" target="_blank"><img src="images/code-refactor-screenshot.jpg" alt="Code Refactor Project Screenshot"></a>
+                    <h4>Basic Profile</h4>
+                        <a href="https://amandac0022.github.io/basic-portfolio/" target="_blank"><img src="images/basic-profile-image.png" alt="Basic Profile Project Screenshot"></a>
+                    <h4>CSS Cheat Sheet</h4>
+                        <a href="https://amandac0022.github.io/CSS-Snippet-Cheat-Sheet/" target="_blank"><img src="images/CSS-Snippet-Cheat-Sheet-image.png" alt="CSS Cheat Sheet Project Screenshot"></a>
+                    <h4>Coming Soon</h4>
+                        <a href="#" target="_blank"><img src="images/luca-bravo-XJXWbfSo2f0-unsplash.jpg" alt="Random Image of Computer Code"></a>
                 </div>
             </section>
             <section> <!-- Contact Me Section -->
-                <h2 class="heading" id="contact">Contact Me</h2>
+                <h2 id="contact">Contact Me</h2>
                 <form class="textbox">
                     <!-- input form below -->
-                    <label for="fname">First name:</label><br>
-                    <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Last name:</label><br>
+                    <label for="fname">First name:</label>
+                    <input type="text" id="fname" name="fname"> 
+                    <label for="lname">Last name:</label>
                     <input type="text" id="lname" name="lname"><br>
                     <label for="email">Email:</label><br>
                     <input type="text" id="email" name="email"><br>
@@ -67,11 +76,11 @@
 
         <footer>
             <!-- Colored bar at the bottom that has my info, email, github, phone, portfolio-->
-            <h2 class="heading" id="links">Links</h2>
+            <h2 id="links">Links</h2>
             <p>@2021</p>
             <p>Phone:(205)902-3708</p>
             <p>Email:AmandaC0022@gmail.com</p>
-            <figure class="inline">
+            <figure>
                 <a href="https://www.facebook.com/amanda.coker.5855/"><img class="logolinks" src="images/logo-facebook-512.png" title="Go to Amanda's Facebook Profile" target="_blank" alt="link to facebook profile"></a>
             </figure>
             <figure class="inline">
