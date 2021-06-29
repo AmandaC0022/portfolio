@@ -21,16 +21,19 @@
         </header>
 
         <main>
-            <section> 
+            <h1 id="bio"> Amanda Morgan</h1>
+            <aside> 
                 <!-- This contains my profile pic with the Bob Ross quote. I want when you hover over my profile pic that it greys out and shows the Bob Ross quote. -->
-                <figure>
+                <figure class="profile-image">
                     <img id="profile-pic" src="images/profile.pic.jpg" alt="My profile picture">
+                    <div class="overlay"> 
+                        <div>      
+                            <p class="overlay-text"><i>"We don't make mistakes, just happy accidents." <br> ~ Bob Ross</i></p> 
+                        </div>
+                    </div>
                 </figure>
-                <h1>Amanda Morgan</h1>
-                <p><i>"We don't make mistakes, just happy accidents." ~ Bob Ross</i></p>
-            </section>
-            <section>
-                <h2 id="bio">Bio:</h2>
+            </aside>
+            <section class="bio-scroll">
                 <!-- This is my Short Bio. I want this to be hidden with a vertical scroll bar. I want each paragraph to be indented. -->
                 <div>
                     <p>Hi! My name is Amanda Morgan and I am currently in the process of switching careers from being an Elementary School Art Teacher to a Full Stack Website Developer.</p>

@@ -8,7 +8,8 @@
 body {
     background: url(images/pinklight-background.jpg)no-repeat center fixed;
     background-size: cover;
-    font-size: 16px;
+    font-size: 24px; 
+    margin: 8px; 
 }
 
 nav {
@@ -19,12 +20,13 @@ nav {
 }
 
 h4.navbutton {
+    font-size:1.5em; 
     background-color: var(--dark1); 
-    border:2px solid black; 
+    border:2px solid var(--light); 
     color: var(--blush); 
     text-decoration:none; 
     border-radius: 50%; 
-    box-shadow:1px 1px 3px black;  
+    box-shadow:1px 1px 3px grey;  
     padding:2%;   
     display: inline-block; 
     transition: all 1s ease-in-out; 
@@ -35,4 +37,70 @@ h4.navbutton {
     transform: scale(1.5);
     background-color: var(--dark2); 
     color: var(--light);  
+}
+h1 {
+    color: var(--blush); 
+    background-color: var(--dark1); opacity:.7; 
+    font-size:3em; 
+    text-align: center; 
+    margin-top: 200px;
+    width: 100%; 
+}
+aside {
+    /*This is the profile pic with Bob Ross quote container*/ 
+    display: inline-block; 
+    width: 30%; 
+    height: 300px;   
+    position: relative;  
+}
+#profile-pic { 
+    /*This is the profile pic container*/ 
+    width: 300px;
+    height: 300px; 
+    position:absolute; 
+    top:0; 
+    left:20px;    
+    border: 2px solid var(--light);    
+    display: block; 
+    box-shadow: 5px 5px 15px grey; 
+    border-radius: 50%; 
+}
+.overlay {
+    /*This is the dark grey overlay that shows up on hover*/ 
+    position: absolute; 
+    top:0; 
+    left:20px; 
+    height: 300px; 
+    width:300px; 
+    border-radius:50%; 
+    border:2px solid var(--light); 
+    background-color: var(--dark2); 
+    opacity: 0; 
+    transition: all .5s ease-in-out;
+}
+aside:hover .overlay {
+    opacity: 1;
+}
+.overlay-text{
+    /*This is the Bob Ross quote*/ 
+    color: var(--blush); 
+    position:absolute;   
+    top:100px;     
+    height: 300px; 
+    width: 300px;     
+    transition: all .5s ease-in-out;
+    border-radius: 50%; 
+    text-align: center; 
+}
+.bio-scroll {
+    display: inline-block;
+    width: 65%;
+    height: 300px;  
+    background-color: var(--light); 
+    position: relative;   
+    overflow:scroll; 
+    padding-left:10px; 
+}
+/* @media (max-width: 768px) {
+This is for laptops.  
 }
