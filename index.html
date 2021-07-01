@@ -70,17 +70,17 @@
                     </div>
                 </div>
             </section>
-            <section> <!-- Contact Me Section -->
+            <section class="form-container"> <!-- Contact Me Section -->
                 <h2 id="contact">Contact Me</h2>
-                <form class="textbox">
+                <form>
                     <!-- input form below -->
                     <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"> 
+                    <input type="text" id="fname" name="fname" required> <br>
                     <label for="lname">Last name:</label>
-                    <input type="text" id="lname" name="lname"><br>
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email"><br>
-                    <textarea> Type Your Message Here: </textarea> <br>
+                    <input type="text" id="lname" name="lname" required><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" required><br>
+                    <textarea type="text" name="inputBox" placeholder="Enter your message here:"></textarea> <br>
                     <input id="submit" type="submit" value="Submit">
                 </form>
             </section>
@@ -88,16 +88,17 @@
 
         <footer>
             <!-- Colored bar at the bottom that has my info, email, github, phone, portfolio-->
-            <h2 id="links">Links</h2>
-            <p>@2021</p>
-            <p>Phone:(205)902-3708</p>
-            <p>Email:AmandaC0022@gmail.com</p>
-            <figure>
-                <a href="https://www.facebook.com/amanda.coker.5855/"><img class="logolinks" src="images/logo-facebook-512.png" title="Go to Amanda's Facebook Profile" target="_blank" alt="link to facebook profile"></a>
-            </figure>
-            <figure class="inline">
-                <a href="https://github.com/AmandaC0022"><img class="logolinks" src="images/2048px-Octicons-mark-github.svg.png" title="Go to Amanda's GitHub Profile" target="_blank" alt="link to github account"></a>
-            </figure>
+            <div id="links">
+                <p id="links">@2021</p>
+                <p>Phone:(###)###-####</p>
+                <p>Email: AmandaC0022@gmail.com</p>
+            </div>
+                <figure class="etsy-link">
+                    <a href="https://www.etsy.com/shop/TheRetroStitch" title="Go to Amanda's Etsy Shop" target="_blank"><img src="images/17-176666_etsy-logo-transparent-png-burial-young-death-nightmarket.png" alt="link to The Retro Stitch Etsy Shop"></a>
+                </figure>
+                <figure class="github-link">
+                    <a href="https://github.com/AmandaC0022" title="Go to Amanda's GitHub Profile" target="_blank"><img src="images/2048px-Octicons-mark-github.svg.png" alt="link to github account"></a>
+                </figure>
         </footer>
 
 	</body>
