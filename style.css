@@ -131,23 +131,32 @@ aside:hover .overlay {
 }
 .flex-element {
 /*image background*/
-    width: 250px;
+width: 30%; 
+text-align:center; 
+}
+#featureimage {
+/*Code Refactor*/ 
+    flex:0 0 80%; 
+    height:80%; 
+    text-align: center; 
+    flex-direction:column; 
+    align-items: center; 
 }
 .flex-element img{
 /*project pictures*/ 
     width: 90%; 
-    height: 60%;  
+    height: 60%; 
     border: 2px solid var(--light);  
     box-shadow: 2px 2px 5px grey; 
-    border-radius: 50%;  
-    margin: 10px; 
+    border-radius: 50%;   
     filter: grayscale(100%); 
     transition: all 1s ease-in-out;
+    text-align:center; 
 }
 .flex-element img:hover {
     filter:grayscale(0%); 
     cursor:pointer;
-    transform: scale(1.5);
+    transform: scale(1.25);
 }
 .flexbox {
 /*flex conatiner*/ 
@@ -232,6 +241,14 @@ footer {
     bottom: 0; 
     right: 10%; 
 } 
-/* @media (max-width: 768px) {
-This is for laptops.  
+
+@media screen and (max-width: 768px) {
+aside {
+    width:100%; 
+    display:inline; 
+}
+.bio-scroll {
+    width: 100%; 
+    display:inline; 
+}
 }
