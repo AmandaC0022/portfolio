@@ -1,0 +1,29 @@
+:root {
+    --blush:rgb(235, 202, 218); 
+    --light: #ffffff; 
+    --dark1: #747487;
+    --dark2: rgb(98, 98, 123);
+}
+* {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
+body {
+    background: url(/images/pinklight-background.jpg)no-repeat center fixed;
+    background-size: cover;
+}
+
+/* Nav Bar  */
+.nav-wrapper-custom {
+    background-color: var(--blush);
+}
+.nav-wrapper-custom a{ 
+    color: var(--dark2); 
+    font-weight:bold; 
+    border: 1px solid var(--light); 
+    border-radius: 25px;
+}
+.home-icon {
+    border: none; 
+}
+
