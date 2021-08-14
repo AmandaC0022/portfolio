@@ -16,39 +16,42 @@
 	</head> 
 	<body>
 <!-- Nav Bar -->
-    <nav>
-        <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-            <li><a href="sass.html">Sass</a></li>
-            <li><a href="badges.html">Components</a></li>
-            <li><a href="collapsible.html">Javascript</a></li>
-            <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        </div>
-    </nav>
-
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper">
+            <a href="#home-page" class="brand-logo"><i class="large material-icons">home</i></a>
+            <!-- <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+            <ul class="right hide-on-med-and-down">
+                <li><a href="#about-me-page">About</a></li>
+                <li><a href="#projects-page">Projects</a></li>
+                <li><a href="#">Resume</a></li>
+                <li><a href="#contact-me-page">Contact Me</a></li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+<!-- Nav Bar Links -->
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">Javascript</a></li>
-        <li><a href="mobile.html">Mobile</a></li>
+        <li><a href="#about-me-page">About</a></li>
+        <li><a href="#projects-page">Projects</a></li>
+        <li><a href="#">Resume</a></li>
+        <li><a href="#contact-me-page">Contact Me</a></li>
     </ul>
           
 <!-- Home Page -->
         <main>
-            <section>
+            <section id="home-page">
     <!-- Profile Picture -->
                 <div class="col s12 m7">
-                    <h2 class="header">Amanda Morgan</h2>
+                    <h2 class="header align-center">Amanda Morgan</h2>
                     <div class="card large horizontal">
                     <div class="card-image">
-                        <img src="images/profile.pic.jpg" alt="My profile picture">
+                        <img class="profile-pic" src="images/profile.pic.jpg" alt="My profile picture">
                     </div>
                     <div class="overlay"> 
                         <div>      
-                            <p class="overlay-text"><i>"We don't make mistakes, just happy accidents." <br> ~ Bob Ross</i></p> 
+                            <p class="overlay-text"><i>"We don't make mistakes, just happy accidents."</i></p>
+                            <p class="overlay-text"><i> ~ Bob Ross </i></p>
                         </div>
                     </div>
                     <div class="card-stacked">
@@ -70,7 +73,7 @@
                 </div>
             </section>
 
-            <section>
+            <section id="about-me-page">
 <!-- About Page -->
                 <h3>About Me</h3>
                 <p>I have always had the desire to create things since I was a little girl. I grew that passion in college when I majored in Art, particularly sculpture, from Auburn University with a minor in Art History. I then did an internship at the Birmingham Museum of Art creating lessons and resources for teachers and children using the Museum's collection. They hired me on after my intership to work in Bart's Art Venture where I interacted with families and school groups who came to visit the museum. I worked there for one year until I started graduate school at the University of Montevallo. I received my Masters in Education in 2016.</p>
@@ -78,7 +81,7 @@
                 <p>After 6 years of teaching in the public school system, I needed a change of pace. I began to research different career options for a creative mind and discovered Website Development. With my Art's background, creative mind, leadership skills as a teacher, and bubbly demenor I am ready to make my debut in this new career field.</p>
                 <p>One of my favorite past times is to crochet. My Granny taught me when I was 8 years old and I have been crocheting ever since. I have turned my hobby into a side hustle by opening up my own Etsy Shop, called <a href= "https://www.etsy.com/shop/TheRetroStitch" title="Visit my Etsy shop, The Retro Stitch"> The Retro Stitch </a>, where I sell handmade stuffed animals.</p>
             </section>
-            <section class="projects">
+            <section id="projects-page">
 <!-- Project Page -->
                 <h2 id="projects">Projects</h2>
                 <div>
@@ -157,7 +160,7 @@
                     <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
                   </ul>
             </section>
-            <section class="form-container"> 
+            <section id="contact-me-page"> 
 <!-- Contact Me Section -->
                 <h2 id="contact">Contact Me</h2>
                 <form>
