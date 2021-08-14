@@ -20,7 +20,7 @@
     <div class="navbar-fixed">         
         <nav>
             <div class="nav-wrapper nav-wrapper-custom">
-            <a href="#home-page" class="brand-logo home-icon"><i class="home-icon" class="large material-icons">home</i></a>
+            <a href="#home-page" class="brand-logo" id="home-icon"><i class="material-icons">home</i></a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li><a href="#about-me-page">About</a></li>
@@ -44,30 +44,35 @@
             <section id="home-page">
     <!-- Profile Picture -->
                 <div class="col s12 m7">
-                    <h2 class="header align-center">Amanda Morgan</h2>
-                    <div class="card large horizontal">
-                    <div class="card-image">
-                        <img class="profile-pic" src="images/profile.pic.jpg" alt="My profile picture">
+                    <h2 class="header" id="home-title">Amanda Morgan</h2>
+                    <div class="card horizontal custom-card">
+                    <div class="card-image custom-card-image">
+                        <img  id="profile-pic"src="images/profile.pic.jpg" alt="My profile picture">
                     </div>
                     <div class="overlay"> 
-                        <div>      
-                            <p class="overlay-text"><i>"We don't make mistakes, just happy accidents."</i></p>
-                            <p class="overlay-text"><i> ~ Bob Ross </i></p>
+                        <div class="overlay-text">      
+                            <p>"We don't make mistakes, just happy accidents."</p>
+                            <p>~ Bob Ross</p>
                         </div>
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
+                          <div class="card-content-header">
+                            <i class="material-icons">computer</i>
                             <h3>Web Developer</h3>
+                            <i class="material-icons">color_lens</i>
                             <h3>Designer</h3>
+                            <i class="material-icons">brush</i>
                             <h3>Artist</h3>
+                            <i class="material-icons">group</i>
                             <h3>Teacher</h3>
-                            <div>
-                                <p>Hi! My name is Amanda Morgan and I am currently in the process of switching careers from being an Elementary School Art Teacher to a Full Stack Website Developer.</p>
-                                <p>I am passionate about making, creating, designing, and building. Let me make your next website.</p>
-                            </div>
-                        </div>
-                        <div class="card-action">
-                        <a href="#">See My Full Story</a>
+                          </div>
+                          <div class="card-body">
+                              <p>Hi! My name is Amanda Morgan and I am currently in the process of switching careers from being an Elementary School Art Teacher to a Full Stack Website Developer.</p>
+                              <p>I am passionate about making, creating, designing, and building. Let me make your next website!</p>
+                          </div>
+                        <div class="card-action" id="profile-link">
+                        <a href="#about-me-page">See My Full Story</a>
                         </div>
                     </div>
                     </div>

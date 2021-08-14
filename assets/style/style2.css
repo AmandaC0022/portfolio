@@ -1,8 +1,8 @@
 :root {
     --blush:rgb(235, 202, 218); 
-    --light: #ffffff; 
+    --light: rgb(255, 255, 255); 
     --dark1: #747487;
-    --dark2: rgb(98, 98, 123);
+    --dark2: rgb(78, 78, 103);
 }
 * {
     font-family: 'Playfair Display', serif;
@@ -23,7 +23,75 @@ body {
     border: 1px solid var(--light); 
     border-radius: 25px;
 }
-.home-icon {
+#home-icon {
     border: none; 
 }
 
+/* Home Page */
+#home-title {
+    text-align: center; 
+    text-shadow: 2px 2px var(--light);
+}
+#profile-pic {
+    border-radius: 50%;
+    position: relative; 
+    width: 400px; 
+    box-shadow: 3px 3px 6px var(--dark2);
+}
+.custom-card {
+    background-color: rgb(255, 255, 255, .5); 
+    padding: 20px; 
+}
+.overlay {
+    background-color: var(--dark1);
+    color: var(--blush); 
+    border-radius: 50%;
+    position: absolute;
+    width: 400px; 
+    height: 400px; 
+    left: 20px; 
+    top: 20px; 
+    border: 1px solid var(--light); 
+    opacity: 0; 
+    transition: all .5s ease-in-out;
+}
+.overlay:hover {
+    opacity: 1;
+}
+.overlay-text {
+    position: absolute;
+    width: 400px;  
+    text-align: center;
+    top: 30%; 
+    transition: all .5s ease-in-out;
+}
+.overlay-text p {
+    font-size: 24px;
+    padding: 5px; 
+    font-style: italic; 
+}
+.card-content-header{
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 2px 2px var(--light);
+}
+.card-content-header i, .card-content-header h3{
+    font-size: 2em;
+    padding: 5px; 
+}
+.card-body p{
+    padding-top: 40px; 
+    padding-left: 10px; 
+}
+#profile-link a{
+    color: var(--dark1); 
+}
+#profile-link {
+    padding-left: 10px;
+}
+#profile-link a:hover {
+    color:var(--dark2); 
+    text-decoration: underline;
+}
