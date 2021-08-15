@@ -96,6 +96,7 @@ navContact[1].addEventListener("click", function() {
   contactMePage.classList.remove("hide"); 
 }); 
 
+//when user clicks on resume link, they are taken to the pdf of the resume
 navResume[0].addEventListener("click", function(){
   hideAllPages(); 
   resumePage.classList.remove("hide"); 
@@ -104,6 +105,7 @@ navResume[1].addEventListener("click", function(){
   hideAllPages(); 
   resumePage.classList.remove("hide"); 
 })
+
 //this hides all project cards 
 function hideAllProjects() { 
   brainBreaks.classList.add("hide"); 
@@ -139,5 +141,3 @@ projectNav3.addEventListener("click", function() {
 }); 
 
 //TO DO: get Contact Me section to work 
-
-//TO DO: add downloadable resume feature 
