@@ -86,8 +86,7 @@ body {
     padding: 5px; 
 }
 .card-body p{
-    padding-top: 40px; 
-    padding-left: 10px; 
+    padding: 40px 10px; 
 }
 #profile-link a{
     color: var(--dark1); 
@@ -122,5 +121,16 @@ body {
 
 /* Projects Page */
 #projects-page h3 {
+    text-align: center;
+    text-shadow: 2px 2px var(--light);
+}
+.custom-card p{
+    line-height: 1.5em;
+    padding-top: 10px; 
+}
+.custom-card h4{
+    text-align: center;
+}
+.project-nav {
     text-align: center;
 }
