@@ -13,9 +13,9 @@ body {
     background: url(/images/pinklight-background.jpg)no-repeat center fixed;
     background-size: cover;
 }
-/* section {
-    height: 700px; 
-} */
+.hide {
+    display:none; 
+}
 /* Nav Bar  */
 .nav-wrapper-custom {
     background-image: linear-gradient(to right, var(--dark1), var(--dark2));
@@ -138,7 +138,10 @@ body {
     text-align: center;
 }
 .project-nav {
-    text-align: center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
 }
 .custom-link {
     color: var(--dark1); 
@@ -150,6 +153,12 @@ body {
 .link-container {
     display: flex; 
     justify-content: space-between;
+}
+.active-custom {
+    background-color: var(--blush);
+    color: var(--dark1); 
+    border:1px solid var(--dark1); 
+    box-shadow: 2px 2px 6px var(--dark2);
 }
 
 /* Contact Me Page */
