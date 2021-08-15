@@ -140,6 +140,18 @@ body {
 .project-nav {
     text-align: center;
 }
+.custom-link {
+    color: var(--dark1); 
+}
+.custom-link:hover {
+    color: var(--dark2); 
+    text-decoration: underline;
+}
+.link-container {
+    display: flex; 
+    justify-content: space-between;
+}
+
 /* Contact Me Page */
 #contact {
     text-align: center;
@@ -151,6 +163,9 @@ body {
 }
 #submit-btn:hover {
     background-color: var(--dark2);
+}
+#submit-icon{
+    color: var(--light); 
 }
 
 /* Footer Section */
