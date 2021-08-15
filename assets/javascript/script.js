@@ -78,12 +78,16 @@ navProjects[0].addEventListener("click", function() {
   hideAllProjects(); 
   projectsPage.classList.remove("hide"); 
   brainBreaks.classList.remove("hide"); 
+  document.getElementById("project-1").classList.add("active-custom");  
+
 })
 navProjects[1].addEventListener("click", function() {
   hideAllPages();
   hideAllProjects();  
   projectsPage.classList.remove("hide"); 
   brainBreaks.classList.remove("hide"); 
+  document.getElementById("project-1").classList.add("active-custom");  
+
 })
 
 //when user clicks on Contact me in the nav bar, then they are taken to the contact me page 

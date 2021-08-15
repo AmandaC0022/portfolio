@@ -99,6 +99,7 @@ body {
 }
 .card-content-header h3 {
     margin-bottom: 30px; 
+    font-size: 1.5em;
 }
 .card-body p{
     padding: 40px 10px; 
@@ -205,4 +206,20 @@ body {
 }
 .custom-link i:hover {
     color: var(--dark2); 
+}
+
+@media only screen and (min-width: 700px) {
+    #brain-breaks, #weather-app, #code-quiz {
+        width: 60%; 
+    }
+    #projects-page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-content-header h3 {
+        font-size: 2em;
+    }
+
 }
