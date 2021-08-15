@@ -12,9 +12,9 @@ body {
     background: url(/images/pinklight-background.jpg)no-repeat center fixed;
     background-size: cover;
 }
-section {
+/* section {
     height: 700px; 
-}
+} */
 /* Nav Bar  */
 .nav-wrapper-custom {
     background-color: var(--blush);
@@ -41,8 +41,10 @@ section {
     box-shadow: 3px 3px 6px var(--dark2);
 }
 .custom-card {
-    background-color: rgb(255, 255, 255, .5); 
+    background-color: rgb(255, 255, 255, .7); 
     padding: 20px; 
+    margin: 30px; 
+    border-radius: 25px;
 }
 .overlay {
     background-color: var(--dark1);
@@ -116,4 +118,9 @@ section {
 .about-me-text a:hover {
     text-decoration: underline;
     color:var(--dark2); 
+}
+
+/* Projects Page */
+#projects-page h3 {
+    text-align: center;
 }
