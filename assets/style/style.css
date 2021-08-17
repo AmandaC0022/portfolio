@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(images/pinklight-background.jpg)no-repeat center fixed;
+    background: url(/images/pinklight-background.jpg) no-repeat center fixed;
     background-size: cover;
     font-size: 18px; 
     margin: 8px; 
