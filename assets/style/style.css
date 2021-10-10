@@ -1,253 +1,207 @@
 :root {
-    --blush:rgb(235, 202, 218); 
-    --light: #f7eeec; 
-    --dark1: #7d7d8a;
-    --dark2: rgb(112, 112, 131);
+    --blush:rgb(210, 179, 194); 
+    --light: rgb(245, 236, 236); 
+    --dark1: #747487;
+    --dark2: rgb(59, 59, 77);
+    --text_shadow: 2px 2px 6px white; 
+    --box_shadow: 3px 3px 6px var(--dark2);
 }
-
-body {
-    background: url(/images/pinklight-background.jpg) no-repeat center fixed;
-    background-size: cover;
-    font-size: 18px; 
-    margin: 8px; 
+* {
     font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color:var(--dark2); 
+}
+main {
+    flex: 1 0 auto;
+}
+body {
+    background: url(/images/pinklight-background.jpg)no-repeat center fixed;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
-nav {
-/*nav bar*/ 
-    background-color: var(--blush); 
-    position:fixed; 
-    top:2%; 
-    width:100%;
-    z-index:1; 
-}
 
-h4.navbutton {
-/*nav buttons */ 
-    font-size:1.5em; 
-    background-color: var(--dark1); 
-    border:2px solid var(--light); 
-    color: var(--blush); 
-    text-decoration:none; 
-    border-radius: 50%; 
-    box-shadow:1px 1px 3px grey;  
-    padding:2%;   
-    display: inline-block; 
-    transition: all 1s ease-in-out; 
-    margin:0 20px;  
-}
-.navbutton:hover{
-    cursor:pointer;
-    transform: scale(1.5);
-    background-color: var(--dark2); 
-    color: var(--light);  
-}
-h1 {
-/*Amanda Morgan*/ 
-    color: var(--blush); 
-    background-color: rgb(112, 112, 131, .5); 
-    font-size:3em; 
+/* Basic Settings */
+.custom-header {
     text-align: center; 
-    margin-top: 200px;
-    width: 100%; 
-    padding: 2%; 
-    margin-bottom: 10%; 
+    text-shadow: var(--text_shadow); 
 }
-aside {
-/*This is the profile pic with Bob Ross quote container*/ 
-    display: inline-block; 
-    width: 300px; 
-    height: 300px;    
-    position: relative;  
+.custom-container {
+    background-color: rgba(255, 255, 255, 0.646); 
+    padding: 20px; 
+    border-radius: 25px;
+    box-shadow: var(--box_shadow);
 }
-#profile-pic { 
-/*This is the profile pic container*/ 
-    width: 280px;
-    height: 280px; 
-    position:absolute; 
-    top:0; 
-    left:20px;    
-    border: 2px solid var(--light);    
-    display: block; 
-    box-shadow: 5px 5px 15px grey; 
-    border-radius: 50%; 
+.custom-card {
+    background-color: rgba(255, 255, 255, 0.646); 
+    padding: 30px; 
+    margin: 30px; 
+    border-radius: 25px;
+}
+.card-body p{
+    padding: 20px 0; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+.custom-container p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+}
+.custom-link {
+    color: var(--dark1); 
+}
+.custom-link:hover {
+    color: var(--dark2); 
+    text-decoration: underline;
+}
+
+
+/* Sparkley Effect */
+.sparkley {
+background: lighten( #2c3e50 , 10% );
+color: rgba(255,255,255,1); 
+transition: all 0.25s ease;
+z-index: -3; 
+}
+.sparkley:hover {
+    color: transparentize( rgba(255,255,255,1),0.8 );
+} 
+
+
+/* Hide */
+/* .hide {
+    display:none; 
+} */
+
+
+/* Nav Bar  */
+.nav-wrapper-custom {
+    background-image: linear-gradient(to left, white, var(--light));
+}
+.nav-wrapper-custom a{ 
+    color: var(--blush); 
+    font-weight:bold;  
+}
+#home-icon-wrapper {
+    border:none; 
+}
+#home-icon {
+    color: var(--blush);
+    font-size: 1.5em;  
+}
+
+
+/* Home Page */
+#profile-pic {
+    border-radius: 50%;
+    position: relative; 
+    width: 350px; 
+    box-shadow: var(--box_shadow); 
 }
 .overlay {
-/*This is the dark grey overlay that shows up on hover*/ 
-    position: absolute; 
-    top:0; 
-    left:20px; 
-    height: 280px; 
-    width:280px; 
-    border-radius:50%; 
-    border:2px solid var(--light); 
-    background-color: var(--dark2); 
+    background-color: var(--dark1);
+    color: var(--blush); 
+    border-radius: 50%;
+    position: absolute;  
+    top: 30px; 
+    left: 50%; 
+    margin-left: -175px;  
+    text-align: center;
+    width: 350px; 
+    height: 350px;  
+    border: 1px solid var(--light); 
     opacity: 0; 
     transition: all .5s ease-in-out;
 }
-aside:hover .overlay {
+.overlay:hover {
     opacity: 1;
 }
-.overlay-text{
-/*Bob Ross quote*/ 
-    color: var(--blush); 
-    position:absolute;   
-    top:100px;     
-    height: 280px; 
-    width: 280px;     
+.overlay-text {
+    position: absolute;
+    width: 350px;  
+    text-align: center;
+    top: 30%; 
     transition: all .5s ease-in-out;
-    border-radius: 50%; 
-    text-align: center; 
 }
-.bio-scroll {
-/*scrolling textbox about me*/ 
-    display: inline-block;
-    width: 65%;
-    height: 300px;  
-    background-color: var(--light); 
-    position: relative;   
-    overflow:scroll; 
-    padding-left:10px; 
-    margin-left: 20px; 
+.overlay-text p {
+    font-size: 24px;
+    padding: 5px; 
+    font-style: italic; 
 }
-.projects {
-/*section background*/ 
-    background-color: rgb(235, 202, 218, 0.5); 
-    margin-top: 10%;  
-}
-
-#projects {
-/* project heading*/ 
-    background-color: var(--dark1); 
-    color: var(--blush); 
-    border-radius: 50%; 
-    font-size: 2em; 
-    width: 50%; 
-    margin: 50px auto; 
-    box-shadow: 2px 2px 5px grey; 
-    border:2px solid var(--light);   
-    padding: 20px; 
-    text-align: center;  
-}
-.flex-element {
-/*image background*/
-width: 30%; 
-text-align:center; 
-}
-#featureimage {
-/*Code Refactor*/ 
-    flex:0 0 80%; 
-    height:80%; 
-    text-align: center; 
-    flex-direction:column; 
-    align-items: center; 
-}
-.flex-element img{
-/*project pictures*/ 
-    width: 90%; 
-    height: 60%; 
-    border: 2px solid var(--light);  
-    box-shadow: 2px 2px 5px grey; 
-    border-radius: 50%;   
-    filter: grayscale(100%); 
-    transition: all 1s ease-in-out;
-    text-align:center; 
-}
-.flex-element img:hover {
-    filter:grayscale(0%); 
-    cursor:pointer;
-    transform: scale(1.25);
-}
-.flexbox {
-/*flex conatiner*/ 
+.card-content-header{
     display: flex; 
-    flex-direction: row; 
-    justify-content: space-evenly; 
-    flex-wrap: wrap;   
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-shadow: var(--text_shadow);
 }
-.flexbox h4 { 
-/*image header*/ 
+.card-content-header i, .card-content-header h3{
+    font-size: 2.5em;
+    padding: 5px; 
+}
+.card-content-header h3 {
+    margin-bottom: 30px; 
+    font-size: 1em;
+}
+#profile-link a{
+    color: var(--dark1); 
+}
+#profile-link a:hover {
+    color:var(--dark2); 
+    text-decoration: underline;
+}
+
+
+/* Projects Page */
+.project-nav {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.link-container {
+    display: flex; 
+    justify-content: space-between;
+}
+.active-custom {
+    background-color: var(--blush);
+    color: var(--dark1); 
+    border:1px solid var(--dark1); 
+    box-shadow: var(--box_shadow); 
+}
+
+
+/* Contact Me Page */
+#submit-btn{
+    background-color: var(--dark1);
+    border-radius: 10px;
+}
+#submit-btn:hover {
+    background-color: var(--dark2);
+}
+#submit-icon{
+    color: var(--light); 
+}
+
+
+/* Footer Section */
+.custom-footer {
+    background: var(--blush);
+}
+.custom-link i{
+    font-size: 2em;
+    padding: 10px; 
+    margin-top: 20px;
+    color: var(--dark1); 
+}
+.custom-link i:hover {
     color: var(--dark2); 
-    text-align: center; 
-    font-size: 1.2em; 
-}
-.form-container {
-    background-color: var(--light);
-    width: 50%;   
-    position: relative; 
-    margin: 10% auto; 
-    border-radius: 2%;
-    border: 2px solid var(--dark1); 
-    padding: 5%;  
-}
-#contact {
-    position: absolute; 
-    top: -60px; 
-    left: -50px; 
-    background-color: var(--dark1); 
-    color: var(--blush); 
-    border-radius: 60%; 
-    box-shadow: 2px 2px 5px grey; 
-    border: 2px solid var(--light);
-    padding: 20px 10px;   
-    width: 30%;
-    text-align: center;   
-}
-form input{ 
-    width: 100%; 
-    line-height: 2; 
-    margin: 10px 5px; 
-}
-form textarea {
-    width: 100%;  
-    margin:10px 5px;  
-}
-#submit {
-    width: 50%; 
-    background-color: var(--dark1); 
-    color: var(--blush); 
-    border: 4px outset var(--dark2); 
-    font-size:1em; 
-}
-#submit:hover {
-    cursor: pointer;
-}
-#submit:visited {
-    border:4px inset var(--dark2); 
-    color: black; 
-}
-footer {
-/*footer container*/ 
-    background-color:rgb(235, 202, 218);  
-    position:relative;
-}
-#links {
-/*footer text*/ 
-    font-size:1em; 
-    width: 50%; 
-    display:inline;    
-}
-.etsy-link img{
-/*facebook logo*/  
-    width: 8%; 
-    position: absolute; 
-    bottom: 0; 
-    right: 0; 
 }
 
-.github-link img{ 
-    width:8%;  
-    position: absolute; 
-    bottom: 0; 
-    right: 10%; 
-} 
-
-@media screen and (max-width: 768px) {
-aside {
-    display:block; 
-    margin:0 auto;  
-}
-.bio-scroll { 
-    display:block; 
-    margin: 0 auto; 
+/* Media Queries */
+@media only screen and (max-width: 700px) {
+    .card-content-header h3, .card-content-header i {
+        font-size: 1em;
+    }
 }
