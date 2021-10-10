@@ -33,14 +33,14 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 //hides all screens except for home 
-function init() {
-  aboutMePage.classList.add("hide"); 
-  projectsPage.classList.add("hide"); 
-  contactMePage.classList.add("hide"); 
-  resumePage.classList.add("hide"); 
-}
+// function init() {
+//   aboutMePage.classList.add("hide"); 
+//   projectsPage.classList.add("hide"); 
+//   contactMePage.classList.add("hide"); 
+//   resumePage.classList.add("hide"); 
+// }
 
-init(); 
+// init(); 
 
 function hideAllPages() {
   homePage.classList.add("hide"); 
