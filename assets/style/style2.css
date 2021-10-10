@@ -5,14 +5,12 @@
     --dark2: rgb(59, 59, 77);
     --text_shadow: 2px 2px 6px white; 
     --box_shadow: 3px 3px 6px var(--dark2);
-    --card_color: 
 }
 * {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     color:var(--dark2); 
 }
-
 main {
     flex: 1 0 auto;
 }
@@ -23,35 +21,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-.sparkley {
-background: lighten( #2c3e50 , 10% );
-color: rgba(255,255,255,1); 
-transition: all 0.25s ease;
-z-index: -3; 
-}
-.sparkley:hover {
-    color: transparentize( rgba(255,255,255,1),0.8 );
-} 
 
-/* .hide {
-    display:none; 
-} */
-
-/* Nav Bar  */
-.nav-wrapper-custom {
-    background-image: linear-gradient(to left, white, var(--light));
-}
-.nav-wrapper-custom a{ 
-    color: var(--blush); 
-    font-weight:bold;  
-}
-#home-icon-wrapper {
-    border:none; 
-}
-#home-icon {
-    color: var(--blush);
-    font-size: 1.5em;  
-}
 
 /* Basic Settings */
 .custom-header {
@@ -62,7 +32,7 @@ z-index: -3;
     background-color: rgba(255, 255, 255, 0.646); 
     padding: 20px; 
     border-radius: 25px;
-    box-shadow: 2px 2px 6px var(--dark2);
+    box-shadow: var(--box_shadow);
 }
 .custom-card {
     background-color: rgba(255, 255, 255, 0.646); 
@@ -85,6 +55,42 @@ z-index: -3;
     color: var(--dark2); 
     text-decoration: underline;
 }
+
+
+/* Sparkley Effect */
+.sparkley {
+background: lighten( #2c3e50 , 10% );
+color: rgba(255,255,255,1); 
+transition: all 0.25s ease;
+z-index: -3; 
+}
+.sparkley:hover {
+    color: transparentize( rgba(255,255,255,1),0.8 );
+} 
+
+
+/* Hide */
+/* .hide {
+    display:none; 
+} */
+
+
+/* Nav Bar  */
+.nav-wrapper-custom {
+    background-image: linear-gradient(to left, white, var(--light));
+}
+.nav-wrapper-custom a{ 
+    color: var(--blush); 
+    font-weight:bold;  
+}
+#home-icon-wrapper {
+    border:none; 
+}
+#home-icon {
+    color: var(--blush);
+    font-size: 1.5em;  
+}
+
 
 /* Home Page */
 #profile-pic {
@@ -128,7 +134,7 @@ z-index: -3;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-shadow: 2px 2px var(--light);
+    text-shadow: var(--text_shadow);
 }
 .card-content-header i, .card-content-header h3{
     font-size: 2.5em;
@@ -146,6 +152,7 @@ z-index: -3;
     text-decoration: underline;
 }
 
+
 /* Projects Page */
 .project-nav {
     display: flex; 
@@ -161,13 +168,10 @@ z-index: -3;
     background-color: var(--blush);
     color: var(--dark1); 
     border:1px solid var(--dark1); 
-    box-shadow: 2px 2px 6px var(--dark2);
+    box-shadow: var(--box_shadow); 
 }
-/* Resume Page */
-#resume-page{
-    display: flex; 
-    justify-content: center; 
-}
+
+
 /* Contact Me Page */
 #submit-btn{
     background-color: var(--dark1);
@@ -179,6 +183,7 @@ z-index: -3;
 #submit-icon{
     color: var(--light); 
 }
+
 
 /* Footer Section */
 .custom-footer {
@@ -194,9 +199,9 @@ z-index: -3;
     color: var(--dark2); 
 }
 
+/* Media Queries */
 @media only screen and (max-width: 700px) {
     .card-content-header h3, .card-content-header i {
         font-size: 1em;
     }
-
 }
