@@ -102,7 +102,7 @@ transition: all 0.25s ease;
     color: var(--blush); 
     border-radius: 50%;
     position: absolute;  
-    top: 30px; 
+    top: 140px; 
     left: 50%; 
     margin-left: -175px;  
     text-align: center;
