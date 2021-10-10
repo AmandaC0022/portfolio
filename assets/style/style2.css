@@ -20,9 +20,22 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
-.hide {
-    display:none; 
+.sparkley {
+background: lighten( #2c3e50 , 10% );
+color: rgba(255,255,255,1); 
+border: none;
+font-weight: normal;
+transition: all 0.25s ease;
+box-shadow: 0 38px 32px -23px black;
 }
+.sparkley:hover {
+    /* background: #2c3e50; */
+    color: transparentize( rgba(255,255,255,1),0.8 );
+} 
+/* .hide {
+    display:none; 
+} */
+
 /* Nav Bar  */
 .nav-wrapper-custom {
     background-image: linear-gradient(to right, var(--dark1), var(--dark2));
