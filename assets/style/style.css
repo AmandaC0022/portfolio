@@ -28,12 +28,6 @@ body {
     text-align: center; 
     text-shadow: var(--text_shadow); 
 }
-.custom-container {
-    background-color: rgba(255, 255, 255, 0.646); 
-    padding: 20px; 
-    border-radius: 25px;
-    box-shadow: var(--box_shadow);
-}
 .custom-card {
     background-color: rgba(255, 255, 255, 0.646); 
     padding: 30px; 
@@ -42,11 +36,8 @@ body {
 }
 .card-body p{
     padding: 20px 0; 
+    line-height: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
-}
-.custom-container p{
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6em;
 }
 .custom-link {
     color: var(--dark1); 
