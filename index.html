@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> 
         <!-- My CSS Link -->
         <link rel="stylesheet" type="text/css" href="./assets/style/style.css"> 
-        <script src="http://s.codepen.io/assests/libs/modernizer.js" type="text/javascript"></script>
 	</head> 
 	<body class="sparkley">
 <!-- Nav Bar -->
@@ -92,35 +91,36 @@
                   </div>
                 </div>
             </section>
-            <section id="projects-page" class="scrollspy">
+            <section id="projects-page" class="scrollspy container">
 <!-- Project Page -->
-                <h3 class="custom-header">Projects</h3>
-                  <div id="brain-breaks" class="col s12 m12 center">
-                      <div class="card custom-card">
-                        <div class="card-image">
-                          <img src="./images/brain-breaks-pic.png" alt="screenshot of Brain Breaks web application">
+              <h3 class="custom-header">Projects</h3>
+                  <div id="brain-breaks" class="col s12 m7 center">
+                    <div class="card custom-card">
+                      <div class="card-image">
+                        <img src="./images/brain-breaks-pic.png" alt="screenshot of Brain Breaks web application">
+                      </div>
+                      <button class="collapsible custom-btn btn-large">Brain Breaks</button>
+                      <div class="content card-stacked">
+                        <div class="card-body center">
+                          <p>Are you bad at working long hours and not taking a break, which in turn causes you to burn out? </p>
+                          <p>Brain Breaks comes to your rescue by solving that problem. Just enter how long you would like to work, then Brain Breaks calculates your break time with a helpful timer. While you work, listen to lo-fi beats that helps boost productivity. Then, after your focus time is up, enjoy your break. You deserve it!</p>
                         </div>
-                        <div class="card-stacked">
-                          <div class="card-body center">
-                            <h4 class="header">Brain Breaks</h4>
-                            <p>Are you bad at working long hours and not taking a break, which in turn causes you to burn out? </p>
-                            <p>Brain Breaks comes to your rescue by solving that problem. Just enter how long you would like to work, then Brain Breaks calculates your break time with a helpful timer. While you work, listen to lo-fi beats that helps boost productivity. Then, after your focus time is up, enjoy your break. You deserve it!</p>
-                          </div>
-                          <div class="link-container">
-                            <a class="custom-link" href="https://genius2k21.github.io/07-Project-Brain_Breaks/" target="_blank">TOUR THE APP HERE</a>
-                            <a class="custom-link" href="https://github.com/AmandaC0022/07-Project-Brain_Breaks" target="_blank">SEE THE CODE HERE</a>
-                          </div>
+                        <div class="link-container">
+                          <a class="custom-link" href="https://genius2k21.github.io/07-Project-Brain_Breaks/" target="_blank">TOUR THE APP HERE</a>
+                          <a class="custom-link" href="https://github.com/AmandaC0022/07-Project-Brain_Breaks" target="_blank">SEE THE CODE HERE</a>
                         </div>
                       </div>
                     </div>
-                    <div id="weather-app" class="col s12 m7">
+                    </div>
+                  
+                    <div id="weather-app" class="col s12 m7 center">
                       <div class="card custom-card">
                         <div class="card-image">
                           <img src="./images/weather-app-pic.png" alt="screenshot of Weather App web application">
                         </div>
-                        <div class="card-stacked">
+                        <button class="collapsible center custom-btn btn-large">Weather App</button>
+                        <div class="card-stacked content">
                           <div class="card-body center">
-                            <h4 class="header">Weather App</h4>
                             <p>Want a simple to use Weather App that doesn't take forever to load?</p>
                             <p>I have designed a beautiful and functional online weather application. Simply put in your city name, and watch as your local weather populates the page. You can see the current weather as well as a 5 day forcast.</p>
                           </div>
@@ -131,12 +131,13 @@
                         </div>
                       </div>
                     </div>
-                    <div id="code-quiz" class="col s12 m7 scale-transition">
+                    <div id="code-quiz" class="col s12 m7 center">
                       <div class="card custom-card">
                         <div class="card-image">
                           <img src="./images/code-quiz-pic.png" alt="screenshot of Code Quiz webpage">
                         </div>
-                        <div class="card-stacked">
+                        <button class="collapsible custom-btn btn-large">Coding Quiz</button>
+                        <div class="card-stacked content">
                           <div class="card-body center">
                             <h4 class="header">Code Quiz Game</h4>
                             <p>Are you a coding master?</p>
@@ -149,6 +150,8 @@
                         </div>
                       </div>
                     </div>
+                  </div>
+                  
   <!-- Project Nav -->
                 <ul class="pagination project-nav">
                     <li id="project-1"><a id="project-nav-1" href="#brain-breaks">1</a></li>

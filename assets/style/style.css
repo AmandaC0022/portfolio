@@ -21,6 +21,9 @@ body {
     min-height: 100vh;
     flex-direction: column;
 }
+section {
+    margin-bottom: 200px; 
+}
 
 
 /* Basic Settings */
@@ -53,7 +56,6 @@ body {
 background: lighten( #2c3e50 , 10% );
 color: rgba(255,255,255,1); 
 transition: all 0.25s ease;
-z-index: -3; 
 }
 .sparkley:hover {
     color: transparentize( rgba(255,255,255,1),0.8 );
@@ -61,9 +63,14 @@ z-index: -3;
 
 
 /* Hide */
-/* .hide {
+.hide {
     display:none; 
-} */
+}
+
+.fadein {
+    -webkit-animation: fadein 1s linear forwards;
+    animation: fadein 1s linear forwards;
+}
 
 
 /* Nav Bar  */
@@ -154,12 +161,25 @@ z-index: -3;
 .link-container {
     display: flex; 
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 .active-custom {
     background-color: var(--blush);
     color: var(--dark1); 
     border:1px solid var(--dark1); 
-    box-shadow: var(--box_shadow); 
+    box-shadow: var(--box_shadow);
+}
+.content {
+    transition: max-height 0.2s ease-out; 
+    overflow: hidden; 
+    max-height: 0;
+}
+.custom-btn{
+    background-color: var(--dark1);
+    border-radius: 25px;
+}
+.custom-btn:hover {
+    background-color: var(--dark2);
 }
 
 
@@ -175,6 +195,10 @@ z-index: -3;
     color: var(--light); 
 }
 
+/* Resume Page */
+#resume-page {
+    margin: 50px 25px; 
+}
 
 /* Footer Section */
 .custom-footer {
@@ -196,3 +220,27 @@ z-index: -3;
         font-size: 1em;
     }
 }
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+        opacity: 1;
+      }
+  }
+
+  @keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    50% {
+      opacity: .5;
+    }
+    100% {
+        opacity: 1;
+      }
+  }
