@@ -19,12 +19,16 @@ var projectLeftArrow = document.getElementsByClassName("left-arrow");
 var projectRightArrow = document.getElementsByClassName("right-arrow");
 var projectNav1 = document.getElementById("project-nav-1"); 
 var projectNav2 = document.getElementById("project-nav-2"); 
-var projectNav3 = document.getElementById("project-nav-3");  
+var projectNav3 = document.getElementById("project-nav-3");
+var projectNav4 = document.getElementById("project-nav-4");  
+
 
 //project cards 
 var brainBreaks = document.getElementById("brain-breaks"); 
 var weatherApp = document.getElementById("weather-app"); 
 var codeQuiz = document.getElementById("code-quiz"); 
+var cachetag = document.getElementById("cachetag"); 
+
 
 // This controls the nav bar transition
 document.addEventListener('DOMContentLoaded', function() {
@@ -67,13 +71,15 @@ function hideAllProjects() {
   brainBreaks.classList.add("hide"); 
   weatherApp.classList.add("hide"); 
   codeQuiz.classList.add("hide"); 
+  cachetag.classList.add("hide"); 
 }
 
 //removes active status from all project nav buttons
 function removeActive() {
   document.getElementById("project-1").classList.remove("active-custom");  
   document.getElementById("project-2").classList.remove("active-custom");  
-  document.getElementById("project-3").classList.remove("active-custom");  
+  document.getElementById("project-3").classList.remove("active-custom"); 
+  document.getElementById("project-4").classList.remove("active-custom");  
 }
 
 projectNav1.addEventListener("click", function() {
@@ -98,6 +104,13 @@ projectNav3.addEventListener("click", function() {
   codeQuiz.classList.add("fadein"); 
   removeActive(); 
   document.getElementById("project-3").classList.add("active-custom");  
+}); 
+projectNav4.addEventListener("click", function() {
+  hideAllProjects(); 
+  cachetag.classList.remove("hide"); 
+  cachetag.classList.add("fadein"); 
+  removeActive(); 
+  document.getElementById("project-4").classList.add("active-custom");  
 }); 
 
 //TODO: get Contact Me section to work 
