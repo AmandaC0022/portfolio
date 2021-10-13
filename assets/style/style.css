@@ -15,7 +15,7 @@ main {
     flex: 1 0 auto;
 }
 body {
-    background: url(/images/pinklight-background.jpg)no-repeat center fixed;
+    background: url(../../images/pinklight-background.jpg)no-repeat center fixed;
     background-size: cover;
     display: flex;
     min-height: 100vh;
